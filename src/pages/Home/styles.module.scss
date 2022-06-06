@@ -1,0 +1,97 @@
+.containerInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: -1.5rem;
+  max-width: 736px;
+  padding: 0 1rem;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-family: 'Inter';
+
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  
+  cursor: pointer;
+  transition: all 0.2s;
+  
+  &:hover{
+    background: var(--blue);
+  }
+
+  svg{
+    margin-left: 0.5rem;
+  }
+}
+
+.containerList{
+  max-width: 736px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: 0 1rem;
+
+  .informations{
+    display: flex;
+    justify-content: space-between;
+    
+    strong{
+      font-size: 0.875rem;
+      font-family: 'Inter';
+
+      span{
+        background: var(--gray-400);
+        color: var(--gray-100);
+        font-weight: 700;
+        padding: 2px 0.5rem;
+        border-radius: 1rem;
+        margin-left: 0.5rem;
+        font-size: 0.75rem;
+      }
+    }
+
+    strong:first-child{
+      color: var(--blue); 
+    }
+
+    strong:last-child{
+      color: var(--purple); 
+    }
+  }
+}
+
+.tasks{
+  max-width: 736px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.clipboard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 736px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  height: 250px;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px 8px;
+
+  p{
+    font-family: 'Inter';
+  }
+
+  img{
+    margin-bottom: 1rem;
+  }
+}

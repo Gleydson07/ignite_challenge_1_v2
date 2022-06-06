@@ -1,0 +1,65 @@
+.task{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 736px;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  padding: 1rem;
+
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+
+  > div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input{
+      border-radius: 50%;
+    }
+
+    p{
+      margin-left: 1rem;
+      font-family: 'Inter';
+      font-size: 0.875rem;
+    }
+  }
+
+  > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 4px;
+
+    svg{
+      color: var(--gray-300);
+    }
+    
+    &:hover{
+      background: var(--gray-400);
+      
+      svg{
+        color: var(--danger);
+      }
+    }
+  }
+
+  & + .task{
+    margin-top: 0.75rem;
+  }
+}
+
+.finished{
+  > div:first-child{
+    p{
+      text-decoration: line-through;
+      color: var(--gray-300);
+    }
+  }
+}
